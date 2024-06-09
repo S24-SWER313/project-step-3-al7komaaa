@@ -1,0 +1,355 @@
+2024-06-07 18:11:35 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-07 18:11:36 INFO  c.f.s.SearchserviceApplication - Starting SearchserviceApplication using Java 21.0.2 with PID 18164 (C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice\target\classes started by fatima in C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice)
+2024-06-07 18:11:36 INFO  c.f.s.SearchserviceApplication - The following 1 profile is active: "native"
+2024-06-07 18:11:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:11:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[default], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:11:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:11:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[native], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:11:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 18:11:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 18:11:41 WARN  o.s.c.a.AnnotationTypeMapping - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2024-06-07 18:11:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-07 18:11:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128 ms. Found 0 JPA repository interfaces.
+2024-06-07 18:11:49 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-07 18:11:49 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-07 18:11:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-06-07 18:11:53 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-06-07 18:11:53 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 18:11:53 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 18:11:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 18:11:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17884 ms
+2024-06-07 18:11:56 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'searchSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'UserServiceFeignClient': No qualifying bean of type 'com.fatima.searchservice.UserServiceFeignClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-07 18:11:57 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-07 18:11:57 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-07 18:11:58 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-07 18:11:59 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field UserServiceFeignClient in com.fatima.searchservice.UserDetailsServiceImpl required a bean of type 'com.fatima.searchservice.UserServiceFeignClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fatima.searchservice.UserServiceFeignClient' in your configuration.
+
+2024-06-07 18:17:19 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-07 18:17:19 INFO  c.f.s.SearchserviceApplication - Starting SearchserviceApplication using Java 21.0.2 with PID 17884 (C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice\target\classes started by fatima in C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice)
+2024-06-07 18:17:19 INFO  c.f.s.SearchserviceApplication - The following 1 profile is active: "native"
+2024-06-07 18:17:20 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:17:20 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[default], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:17:20 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:17:20 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[native], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:17:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 18:17:20 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 18:17:25 WARN  o.s.c.a.AnnotationTypeMapping - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2024-06-07 18:17:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-07 18:17:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 275 ms. Found 0 JPA repository interfaces.
+2024-06-07 18:17:36 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-07 18:17:36 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-07 18:17:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-06-07 18:17:39 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-06-07 18:17:39 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 18:17:39 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 18:17:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 18:17:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 19701 ms
+2024-06-07 18:17:41 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'searchSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'UserServiceFeignClient': Error creating bean with name 'com.fatima.searchservice.UserServiceFeignClient': FactoryBean threw exception on object creation
+2024-06-07 18:17:41 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-07 18:17:41 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-07 18:17:41 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-07 18:17:42 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.openfeign.FeignClientFactory.<init>(FeignClientFactory.java:47)
+
+The following method did not exist:
+
+    'void org.springframework.cloud.context.named.NamedContextFactory.<init>(java.lang.Class, java.lang.String, java.lang.String, java.util.Map)'
+
+The calling method's class, org.springframework.cloud.openfeign.FeignClientFactory, was loaded from the following location:
+
+    jar:file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-openfeign-core/4.1.2/spring-cloud-openfeign-core-4.1.2.jar!/org/springframework/cloud/openfeign/FeignClientFactory.class
+
+The called method's class, org.springframework.cloud.context.named.NamedContextFactory, is available from the following locations:
+
+    jar:file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar!/org/springframework/cloud/context/named/NamedContextFactory.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.cloud.context.named.NamedContextFactory: file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.cloud.openfeign.FeignClientFactory and org.springframework.cloud.context.named.NamedContextFactory
+
+2024-06-07 18:20:35 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-07 18:20:36 INFO  c.f.s.SearchserviceApplication - Starting SearchserviceApplication using Java 21.0.2 with PID 18572 (C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice\target\classes started by fatima in C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice)
+2024-06-07 18:20:36 INFO  c.f.s.SearchserviceApplication - The following 1 profile is active: "native"
+2024-06-07 18:20:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:20:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[default], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:20:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:20:36 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[native], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:20:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 18:20:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 18:20:41 WARN  o.s.c.a.AnnotationTypeMapping - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2024-06-07 18:20:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-07 18:20:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 0 JPA repository interfaces.
+2024-06-07 18:20:51 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-07 18:20:51 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-07 18:20:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-06-07 18:20:55 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-06-07 18:20:55 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 18:20:55 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 18:20:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 18:20:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 19751 ms
+2024-06-07 18:20:58 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'searchSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'UserServiceFeignClient': Error creating bean with name 'com.fatima.searchservice.UserServiceFeignClient': FactoryBean threw exception on object creation
+2024-06-07 18:20:58 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-07 18:20:58 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-07 18:20:58 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-07 18:21:00 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.openfeign.FeignClientFactory.<init>(FeignClientFactory.java:47)
+
+The following method did not exist:
+
+    'void org.springframework.cloud.context.named.NamedContextFactory.<init>(java.lang.Class, java.lang.String, java.lang.String, java.util.Map)'
+
+The calling method's class, org.springframework.cloud.openfeign.FeignClientFactory, was loaded from the following location:
+
+    jar:file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-openfeign-core/4.1.2/spring-cloud-openfeign-core-4.1.2.jar!/org/springframework/cloud/openfeign/FeignClientFactory.class
+
+The called method's class, org.springframework.cloud.context.named.NamedContextFactory, is available from the following locations:
+
+    jar:file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar!/org/springframework/cloud/context/named/NamedContextFactory.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.cloud.context.named.NamedContextFactory: file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.cloud.openfeign.FeignClientFactory and org.springframework.cloud.context.named.NamedContextFactory
+
+2024-06-07 18:25:20 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-07 18:25:20 INFO  c.f.s.SearchserviceApplication - Starting SearchserviceApplication using Java 21.0.2 with PID 15624 (C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice\target\classes started by fatima in C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice)
+2024-06-07 18:25:20 INFO  c.f.s.SearchserviceApplication - The following 1 profile is active: "native"
+2024-06-07 18:25:21 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:25:21 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[default], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:25:21 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:25:21 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[native], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:25:21 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 18:25:21 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 18:25:27 WARN  o.s.c.a.AnnotationTypeMapping - Support for convention-based annotation attribute overrides is deprecated and will be removed in Spring Framework 6.2. Please annotate the following attributes in @org.springframework.cloud.context.config.annotation.RefreshScope with appropriate @AliasFor declarations: [proxyMode]
+2024-06-07 18:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-07 18:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 0 JPA repository interfaces.
+2024-06-07 18:25:34 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-07 18:25:34 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-07 18:25:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-06-07 18:25:38 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-06-07 18:25:38 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 18:25:38 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 18:25:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 18:25:39 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 18363 ms
+2024-06-07 18:25:40 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'searchSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'UserServiceFeignClient': Error creating bean with name 'com.fatima.searchservice.UserServiceFeignClient': FactoryBean threw exception on object creation
+2024-06-07 18:25:40 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-06-07 18:25:41 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-06-07 18:25:41 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-07 18:25:41 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.openfeign.FeignClientFactory.<init>(FeignClientFactory.java:47)
+
+The following method did not exist:
+
+    'void org.springframework.cloud.context.named.NamedContextFactory.<init>(java.lang.Class, java.lang.String, java.lang.String, java.util.Map)'
+
+The calling method's class, org.springframework.cloud.openfeign.FeignClientFactory, was loaded from the following location:
+
+    jar:file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-openfeign-core/4.1.2/spring-cloud-openfeign-core-4.1.2.jar!/org/springframework/cloud/openfeign/FeignClientFactory.class
+
+The called method's class, org.springframework.cloud.context.named.NamedContextFactory, is available from the following locations:
+
+    jar:file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar!/org/springframework/cloud/context/named/NamedContextFactory.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    org.springframework.cloud.context.named.NamedContextFactory: file:/C:/Users/fatim/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.cloud.openfeign.FeignClientFactory and org.springframework.cloud.context.named.NamedContextFactory
+
+2024-06-07 18:29:45 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-07 18:29:46 INFO  c.f.s.SearchserviceApplication - Starting SearchserviceApplication using Java 21.0.2 with PID 8836 (C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice\target\classes started by fatima in C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice)
+2024-06-07 18:29:46 INFO  c.f.s.SearchserviceApplication - The following 1 profile is active: "native"
+2024-06-07 18:29:46 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:29:46 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[default], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:29:46 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 18:29:46 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[native], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 18:29:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 18:29:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 18:29:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-07 18:29:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 236 ms. Found 0 JPA repository interfaces.
+2024-06-07 18:30:04 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=db45b8ba-ea5c-32e6-a093-a1ac1f3d26aa
+2024-06-07 18:30:10 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-07 18:30:10 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-07 18:30:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-06-07 18:30:13 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-06-07 18:30:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 18:30:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 18:30:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 18:30:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 27223 ms
+2024-06-07 18:30:25 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-07 18:30:27 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-07 18:30:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-07 18:30:28 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-07 18:30:30 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-07 18:30:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-07 18:30:30 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@186dc25b
+2024-06-07 18:30:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-07 18:30:31 WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-07 18:30:31 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-07 18:30:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-07 18:30:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-07 18:30:36 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-06-07 18:30:44 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-07 18:30:45 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49be747c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6eca8481, org.springframework.security.web.context.SecurityContextHolderFilter@9119112, org.springframework.security.web.header.HeaderWriterFilter@1d640066, org.springframework.web.filter.CorsFilter@2cf283c8, org.springframework.security.web.authentication.logout.LogoutFilter@24d16176, com.fatima.searchservice.AuthTokenFilter@567d4c0b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@667f7659, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ec09c00, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5168fb4b, org.springframework.security.web.session.SessionManagementFilter@65d644f1, org.springframework.security.web.access.ExceptionTranslationFilter@7bc00a5e, org.springframework.security.web.access.intercept.AuthorizationFilter@1773d67b]
+2024-06-07 18:30:52 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-06-07 18:30:52 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-07 18:30:53 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-06-07 18:30:53 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-06-07 18:30:53 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-06-07 18:30:55 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-06-07 18:30:55 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-06-07 18:30:55 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-06-07 18:30:55 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1717774255659 with initial instances count: 1
+2024-06-07 18:30:55 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SEARCHSERVICE with eureka with status UP
+2024-06-07 18:30:55 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717774255680, current=UP, previous=STARTING]
+2024-06-07 18:30:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCHSERVICE/fatma:searchservice:8083: registering service...
+2024-06-07 18:30:55 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-06-07 18:30:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path ''
+2024-06-07 18:30:55 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2024-06-07 18:30:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCHSERVICE/fatma:searchservice:8083 - registration status: 204
+2024-06-07 18:30:55 INFO  c.f.s.SearchserviceApplication - Started SearchserviceApplication in 81.53 seconds (process running for 88.206)
+2024-06-07 18:35:18 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application SEARCHSERVICE with eureka with status DOWN
+2024-06-07 18:35:18 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717774518728, current=DOWN, previous=UP]
+2024-06-07 18:35:18 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCHSERVICE/fatma:searchservice:8083: registering service...
+2024-06-07 18:35:18 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCHSERVICE/fatma:searchservice:8083 - registration status: 204
+2024-06-07 18:35:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-07 18:35:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-07 18:35:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-07 18:35:18 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-06-07 18:35:21 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-06-07 18:35:21 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCHSERVICE/fatma:searchservice:8083 - deregister  status: 200
+2024-06-07 18:35:21 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-06-07 19:04:21 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-07 19:04:22 INFO  c.f.s.SearchserviceApplication - Starting SearchserviceApplication using Java 21.0.2 with PID 2584 (C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice\target\classes started by fatima in C:\Users\fatim\Desktop\step3\project-step-3-al7komaaa\searchservice)
+2024-06-07 19:04:22 INFO  c.f.s.SearchserviceApplication - The following 1 profile is active: "native"
+2024-06-07 19:04:22 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 19:04:22 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[default], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 19:04:22 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2024-06-07 19:04:22 INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=searchservice, profiles=[native], label=null, version=c0d218eb5d51a4b151e7883894e2fb4cd394ce22, state=null
+2024-06-07 19:04:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-07 19:04:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-07 19:04:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-07 19:04:32 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 0 JPA repository interfaces.
+2024-06-07 19:04:35 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=db45b8ba-ea5c-32e6-a093-a1ac1f3d26aa
+2024-06-07 19:04:38 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-07 19:04:38 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-07 19:04:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-06-07 19:04:41 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-06-07 19:04:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-07 19:04:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-07 19:04:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-07 19:04:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 19099 ms
+2024-06-07 19:04:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-07 19:04:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-07 19:04:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-07 19:04:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-06-07 19:04:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-07 19:04:49 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-07 19:04:50 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cab9c5d
+2024-06-07 19:04:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-07 19:04:50 WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-06-07 19:04:50 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-07 19:04:56 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-07 19:04:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-07 19:04:57 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-06-07 19:05:14 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-07 19:05:15 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@628e0523, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f317986, org.springframework.security.web.context.SecurityContextHolderFilter@1b9f26ec, org.springframework.security.web.header.HeaderWriterFilter@5a596f51, org.springframework.web.filter.CorsFilter@1767f02b, org.springframework.security.web.authentication.logout.LogoutFilter@1ef3867c, com.fatima.searchservice.AuthTokenFilter@4ce7b63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31a3b726, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14f06455, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68f8555, org.springframework.security.web.session.SessionManagementFilter@35910968, org.springframework.security.web.access.ExceptionTranslationFilter@4b3b0d6a, org.springframework.security.web.access.intercept.AuthorizationFilter@e86d731]
+2024-06-07 19:05:20 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-06-07 19:05:21 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-07 19:05:22 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-06-07 19:05:22 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-06-07 19:05:22 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-06-07 19:05:25 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-06-07 19:05:25 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-06-07 19:05:25 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-06-07 19:05:25 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1717776325704 with initial instances count: 1
+2024-06-07 19:05:25 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SEARCHSERVICE with eureka with status UP
+2024-06-07 19:05:25 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717776325817, current=UP, previous=STARTING]
+2024-06-07 19:05:25 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-06-07 19:05:25 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCHSERVICE/fatma:searchservice:8083: registering service...
+2024-06-07 19:05:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path ''
+2024-06-07 19:05:26 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+2024-06-07 19:05:26 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SEARCHSERVICE/fatma:searchservice:8083 - registration status: 204
+2024-06-07 19:05:26 INFO  c.f.s.SearchserviceApplication - Started SearchserviceApplication in 73.146 seconds (process running for 77.954)
+2024-06-07 19:06:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-07 19:06:03 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-07 19:06:03 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2024-06-07 19:06:03 ERROR com.fatima.searchservice.JwtUtils - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2024-06-07 19:06:39 ERROR com.fatima.searchservice.JwtUtils - Invalid JWT token: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.

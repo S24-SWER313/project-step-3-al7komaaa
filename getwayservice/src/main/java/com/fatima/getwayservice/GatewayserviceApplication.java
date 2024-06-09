@@ -46,7 +46,7 @@ public class GatewayserviceApplication {
 						.uri("lb://postsservice"))
 	
 	.route(p -> p
-		.path("/users/search/**")
+		.path("/search/**")
 			.filters(f -> f
 			.filter(jwtAuthenticationFilter)
 			.circuitBreaker(config -> config

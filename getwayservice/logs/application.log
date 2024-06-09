@@ -109,3 +109,132 @@
 2024-06-09 13:31:09 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
 2024-06-09 13:31:10 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
 2024-06-09 13:31:11 INFO  c.f.g.GatewayserviceApplication - Started GatewayserviceApplication in 16.035 seconds (process running for 17.297)
+2024-06-09 13:35:53 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-09 13:35:53 INFO  c.f.g.GatewayserviceApplication - Starting GatewayserviceApplication using Java 21.0.1 with PID 10744 (C:\Users\lenovo\OneDrive\Desktop\Microservice9\getwayservice\target\classes started by lenovo in C:\Users\lenovo\OneDrive\Desktop\Microservice9\getwayservice)
+2024-06-09 13:35:53 INFO  c.f.g.GatewayserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-09 13:35:53 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-09 13:35:53 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-09 13:35:58 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ba9077a3-e9dc-3adb-aae0-232d6bb418fe
+2024-06-09 13:35:59 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-09 13:35:59 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-09 13:35:59 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-09 13:35:59 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-09 13:35:59 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-09 13:36:02 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:36:03 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2024-06-09 13:36:03 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-09 13:36:05 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:36:05 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-09 13:36:06 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-06-09 13:36:06 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-06-09 13:36:06 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-09 13:36:06 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-06-09 13:36:06 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-06-09 13:36:06 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-06-09 13:36:07 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-06-09 13:36:07 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-06-09 13:36:07 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-06-09 13:36:07 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-06-09 13:36:07 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-06-09 13:36:07 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-06-09 13:36:07 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-06-09 13:36:08 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-06-09 13:36:08 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-06-09 13:36:08 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-06-09 13:36:08 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1717929368771 with initial instances count: 2
+2024-06-09 13:36:08 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application GETWAYSERVICE with eureka with status UP
+2024-06-09 13:36:08 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717929368778, current=UP, previous=STARTING]
+2024-06-09 13:36:08 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765: registering service...
+2024-06-09 13:36:08 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765 - registration status: 204
+2024-06-09 13:36:09 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8765
+2024-06-09 13:36:09 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8765
+2024-06-09 13:36:10 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:36:11 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:36:11 INFO  c.f.g.GatewayserviceApplication - Started GatewayserviceApplication in 19.888 seconds (process running for 21.188)
+2024-06-09 13:41:07 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-06-09 13:42:28 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-09 13:42:28 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application GETWAYSERVICE with eureka with status DOWN
+2024-06-09 13:42:28 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717929748875, current=DOWN, previous=UP]
+2024-06-09 13:42:28 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765: registering service...
+2024-06-09 13:42:28 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765 - registration status: 204
+2024-06-09 13:42:28 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-06-09 13:42:31 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-06-09 13:42:31 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765 - deregister  status: 200
+2024-06-09 13:42:31 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-06-09 13:42:33 INFO  c.f.g.GatewayserviceApplication - Starting GatewayserviceApplication using Java 21.0.1 with PID 10744 (C:\Users\lenovo\OneDrive\Desktop\Microservice9\getwayservice\target\classes started by lenovo in C:\Users\lenovo\OneDrive\Desktop\Microservice9\getwayservice)
+2024-06-09 13:42:33 INFO  c.f.g.GatewayserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-09 13:42:34 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ba9077a3-e9dc-3adb-aae0-232d6bb418fe
+2024-06-09 13:42:34 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-09 13:42:34 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-09 13:42:34 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-06-09 13:42:34 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-09 13:42:34 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-06-09 13:42:36 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:42:37 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2024-06-09 13:42:37 INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-06-09 13:42:38 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:42:38 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-09 13:42:39 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-06-09 13:42:39 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2024-06-09 13:42:39 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-06-09 13:42:39 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-06-09 13:42:39 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-06-09 13:42:39 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1717929759120 with initial instances count: 3
+2024-06-09 13:42:39 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application GETWAYSERVICE with eureka with status UP
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717929759122, current=UP, previous=STARTING]
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765: registering service...
+2024-06-09 13:42:39 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765 - registration status: 204
+2024-06-09 13:42:39 INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8765
+2024-06-09 13:42:39 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8765
+2024-06-09 13:42:40 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:42:40 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-06-09 13:42:41 INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2024-06-09 13:42:41 INFO  c.f.g.GatewayserviceApplication - Started GatewayserviceApplication in 9.111 seconds (process running for 410.994)
+2024-06-09 13:42:41 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application GETWAYSERVICE with eureka with status DOWN
+2024-06-09 13:42:41 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1717929761205, current=DOWN, previous=UP]
+2024-06-09 13:42:41 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765: registering service...
+2024-06-09 13:42:41 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-09 13:42:41 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-06-09 13:42:41 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765 - registration status: 204
+2024-06-09 13:42:41 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-06-09 13:42:41 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GETWAYSERVICE/localhost:getwayservice:8765 - deregister  status: 200
+2024-06-09 13:42:41 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-06-09 13:42:42 INFO  c.f.g.GatewayserviceApplication - Starting GatewayserviceApplication using Java 21.0.1 with PID 10744 (C:\Users\lenovo\OneDrive\Desktop\Microservice9\getwayservice\target\classes started by lenovo in C:\Users\lenovo\OneDrive\Desktop\Microservice9\getwayservice)
+2024-06-09 13:42:42 INFO  c.f.g.GatewayserviceApplication - No active profile set, falling back to 1 default profile: "default"

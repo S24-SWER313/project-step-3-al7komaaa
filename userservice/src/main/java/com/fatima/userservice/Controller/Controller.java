@@ -493,9 +493,18 @@ public User userFromTokenpost(HttpServletRequest request) {
 
 }
 
+// @GetMapping("/search/{username}")
+// public ResponseEntity<List<User>> getUsersByUsername(@PathVariable String username) {
+//     List<User> users = userRepo.searchUsers(username);
+//     return ResponseEntity.ok(users);
+// }
+
 @GetMapping("/search/{username}")
-public ResponseEntity<List<User>> getUsersByUsername(@PathVariable String username) {
+public ResponseEntity<?> searchUsersByUsername(@PathVariable String username) {
     List<User> users = userRepo.searchUsers(username);
+    if (users.isEmpty()) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new MessageResponse("No users found with username " + username));
+    }
     return ResponseEntity.ok(users);
 }
 
@@ -510,7 +519,12 @@ public User user(Long id) {
    
 }
 
-
+@GetMapping("/user")
+    public ResponseEntity<?> getOneUserByUsername(@RequestParam String username) {
+        User user = userRepo.findByUsername(username)
+                .orElseThrow(() -> new NFException("User with username " + username + " not found."));
+        return ResponseEntity.ok(user);
+    }
 
 
 

@@ -8,9 +8,10 @@ import java.util.List;
 
 @FeignClient(name = "userservice", url = "${userservice.url}", configuration = FeignConfig.class)
 public interface UserServiceFeignClient {
+    
     @GetMapping("/users/search/{username}")
     List<User> getUsersByUsername(@PathVariable("username") String username);
 
     @GetMapping("/users/user")
-   User getOneUsersByUsername(@RequestParam("username") String username);
+    User getOneUsersByUsername(@RequestParam("username") String username);
 }
